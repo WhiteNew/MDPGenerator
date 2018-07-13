@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="316.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cmdp.MyController">
+   <children>
+      <Label layoutX="2.0" layoutY="6.0" text="驾驶员详细行为信息" textFill="#dd0b0b">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="2.0" layoutY="40.0" prefHeight="230.0" prefWidth="501.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="414.0" minWidth="10.0" prefWidth="387.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="79.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="性别:0表示男性，1表示女性" />
+            <Label prefHeight="15.0" prefWidth="386.0" text="年龄:0代表20~30岁人群，1代表35~45岁人群，2代表大于50岁的人群" GridPane.rowIndex="1" />
+            <Label text="职业：0代表商人，1代表白领，2代表无业人群" GridPane.rowIndex="2" />
+            <Label text="编辑短信：0表示未编辑短信，1表示编辑短信" GridPane.rowIndex="3" />
+            <Label text="打电话：0表示未接听电话，1表示接听电话" GridPane.rowIndex="4" />
+            <Label prefHeight="15.0" prefWidth="391.0" text="驾驶时间：0代表小于1个小时，1代表为1到2个小时，2表示大于2个小时" GridPane.rowIndex="5" />
+            <Label text="坐姿是否端正：0代表挺直，1代表弯腰" GridPane.rowIndex="6" />
+            <Label text="眼睛是否注视前方：0代表直视前方，1代表斜视" GridPane.rowIndex="7" />
+            <Label text="手的位置：0双手在方向盘上，1单手在方向盘上，2双手离开方向盘" GridPane.rowIndex="8" />
+            <TextField fx:id="genderfld" prefHeight="23.0" prefWidth="87.0" GridPane.columnIndex="1" />
+            <TextField fx:id="agefld" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="careerfld" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="edtingfld" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="callingfld" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="drivingtimefld" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="posefld" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="eyefld" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="handfld" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <Button fx:id="saveSubmit" layoutX="401.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleSubmit" text="提交" />
+      <Button fx:id="closeDetails" layoutX="457.0" layoutY="285.0" mnemonicParsing="false" onAction="#HandDetailClose" text="关闭" />
+   </children>
+</AnchorPane>

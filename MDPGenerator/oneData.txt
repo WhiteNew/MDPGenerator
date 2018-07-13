@@ -1,0 +1,14 @@
+@relation TrainingData
+@attribute time numeric
+@attribute gender numeric
+@attribute age numeric
+@attribute career numeric
+@attribute edting numeric
+@attribute calling numeric
+@attribute drivingtime numeric
+@attribute pose numeric
+@attribute eye numeric
+@attribute hands numeric
+@attribute state {1, 2, 3}
+@data
+1 0 1 0 1 0 1 0 1 1
